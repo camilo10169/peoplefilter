@@ -1,0 +1,49 @@
+<h1>Listing formal_educations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Area</th>
+      <th>Degree</th>
+      <th>Institute</th>
+      <th>Country</th>
+      <th>Department</th>
+      <th>City</th>
+      <th>Date start</th>
+      <th>Date end</th>
+      <th>Study state</th>
+      <th>Validated</th>
+      <th>Person</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @formal_educations.each do |formal_education| %>
+      <tr>
+        <td><%= formal_education.level %></td>
+        <td><%= formal_education.area %></td>
+        <td><%= formal_education.degree %></td>
+        <td><%= formal_education.institute %></td>
+        <td><%= formal_education.country %></td>
+        <td><%= formal_education.department %></td>
+        <td><%= formal_education.city %></td>
+        <td><%= formal_education.date_start %></td>
+        <td><%= formal_education.date_end %></td>
+        <td><%= formal_education.study_state %></td>
+        <td><%= formal_education.validated %></td>
+        <td><%= formal_education.person %></td>
+        <td><%= link_to 'Show', formal_education %></td>
+        <td><%= link_to 'Edit', edit_formal_education_path(formal_education) %></td>
+        <td><%= link_to 'Destroy', formal_education, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Formal education', new_formal_education_path %>

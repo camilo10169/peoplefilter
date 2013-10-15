@@ -1,0 +1,81 @@
+<%= form_for(@experience) do |f| %>
+  <% if @experience.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@experience.errors.count, "error") %> prohibited this experience from being saved:</h2>
+
+      <ul>
+      <% @experience.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :company %><br>
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :sector %><br>
+    <%= f.text_field :sector %>
+  </div>
+  <div class="field">
+    <%= f.label :position %><br>
+    <%= f.text_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :position_level %><br>
+    <%= f.text_field :position_level %>
+  </div>
+  <div class="field">
+    <%= f.label :position_equivalent %><br>
+    <%= f.text_field :position_equivalent %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :immediate_boss %><br>
+    <%= f.text_field :immediate_boss %>
+  </div>
+  <div class="field">
+    <%= f.label :date_start %><br>
+    <%= f.date_select :date_start %>
+  </div>
+  <div class="field">
+    <%= f.label :date_end %><br>
+    <%= f.date_select :date_end %>
+  </div>
+  <div class="field">
+    <%= f.label :time_experience %><br>
+    <%= f.number_field :time_experience %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :function_performed %><br>
+    <%= f.text_area :function_performed %>
+  </div>
+  <div class="field">
+    <%= f.label :actual_job %><br>
+    <%= f.check_box :actual_job %>
+  </div>
+  <div class="field">
+    <%= f.label :validated %><br>
+    <%= f.check_box :validated %>
+  </div>
+  <div class="field">
+    <%= f.label :person %><br>
+    <%= f.text_field :person %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

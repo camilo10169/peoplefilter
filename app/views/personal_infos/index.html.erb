@@ -1,0 +1,47 @@
+<h1>Listing personal_infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gender</th>
+      <th>Marital status</th>
+      <th>Country birth</th>
+      <th>Dpto birth</th>
+      <th>City birth</th>
+      <th>Job profile</th>
+      <th>Years experience</th>
+      <th>Wage aspiration</th>
+      <th>Has job</th>
+      <th>Native language</th>
+      <th>Person</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personal_infos.each do |personal_info| %>
+      <tr>
+        <td><%= personal_info.gender %></td>
+        <td><%= personal_info.marital_status %></td>
+        <td><%= personal_info.country_birth %></td>
+        <td><%= personal_info.dpto_birth %></td>
+        <td><%= personal_info.city_birth %></td>
+        <td><%= personal_info.job_profile %></td>
+        <td><%= personal_info.years_experience %></td>
+        <td><%= personal_info.wage_aspiration %></td>
+        <td><%= personal_info.has_job %></td>
+        <td><%= personal_info.native_language %></td>
+        <td><%= personal_info.person %></td>
+        <td><%= link_to 'Show', personal_info %></td>
+        <td><%= link_to 'Edit', edit_personal_info_path(personal_info) %></td>
+        <td><%= link_to 'Destroy', personal_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Personal info', new_personal_info_path %>

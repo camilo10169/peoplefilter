@@ -1,0 +1,1 @@
+json.extract! @no_formal_education, :type_study, :country, :department, :city, :degree, :institute, :area, :time_intensity, :date_start, :date_end, :description, :validated, :person_id, :created_at, :updated_at

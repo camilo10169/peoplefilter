@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @personal_info.gender %>
+</p>
+
+<p>
+  <strong>Marital status:</strong>
+  <%= @personal_info.marital_status %>
+</p>
+
+<p>
+  <strong>Country birth:</strong>
+  <%= @personal_info.country_birth %>
+</p>
+
+<p>
+  <strong>Dpto birth:</strong>
+  <%= @personal_info.dpto_birth %>
+</p>
+
+<p>
+  <strong>City birth:</strong>
+  <%= @personal_info.city_birth %>
+</p>
+
+<p>
+  <strong>Job profile:</strong>
+  <%= @personal_info.job_profile %>
+</p>
+
+<p>
+  <strong>Years experience:</strong>
+  <%= @personal_info.years_experience %>
+</p>
+
+<p>
+  <strong>Wage aspiration:</strong>
+  <%= @personal_info.wage_aspiration %>
+</p>
+
+<p>
+  <strong>Has job:</strong>
+  <%= @personal_info.has_job %>
+</p>
+
+<p>
+  <strong>Native language:</strong>
+  <%= @personal_info.native_language %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @personal_info.person %>
+</p>
+
+<%= link_to 'Edit', edit_personal_info_path(@personal_info) %> |
+<%= link_to 'Back', personal_infos_path %>

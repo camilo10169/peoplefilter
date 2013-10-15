@@ -1,0 +1,1 @@
+json.extract! @personal_info, :gender, :marital_status, :country_birth, :dpto_birth, :city_birth, :job_profile, :years_experience, :wage_aspiration, :has_job, :native_language, :person_id, :created_at, :updated_at

@@ -1,0 +1,55 @@
+<h1>Listing convocations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th>Amount vacancies</th>
+      <th>Hierarchy</th>
+      <th>City</th>
+      <th>Department</th>
+      <th>Area</th>
+      <th>Subarea</th>
+      <th>Gender</th>
+      <th>Min age</th>
+      <th>Max age</th>
+      <th>Education level</th>
+      <th>Education state</th>
+      <th>Language</th>
+      <th>Description</th>
+      <th>Company</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @convocations.each do |convocation| %>
+      <tr>
+        <td><%= convocation.position %></td>
+        <td><%= convocation.amount_vacancies %></td>
+        <td><%= convocation.hierarchy %></td>
+        <td><%= convocation.city %></td>
+        <td><%= convocation.department %></td>
+        <td><%= convocation.area %></td>
+        <td><%= convocation.subarea %></td>
+        <td><%= convocation.gender %></td>
+        <td><%= convocation.min_age %></td>
+        <td><%= convocation.max_age %></td>
+        <td><%= convocation.education_level %></td>
+        <td><%= convocation.education_state %></td>
+        <td><%= convocation.language %></td>
+        <td><%= convocation.description %></td>
+        <td><%= convocation.company %></td>
+        <td><%= link_to 'Show', convocation %></td>
+        <td><%= link_to 'Edit', edit_convocation_path(convocation) %></td>
+        <td><%= link_to 'Destroy', convocation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Convocation', new_convocation_path %>

@@ -1,0 +1,77 @@
+<%= form_for(@convocation) do |f| %>
+  <% if @convocation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@convocation.errors.count, "error") %> prohibited this convocation from being saved:</h2>
+
+      <ul>
+      <% @convocation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :position %><br>
+    <%= f.text_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :amount_vacancies %><br>
+    <%= f.number_field :amount_vacancies %>
+  </div>
+  <div class="field">
+    <%= f.label :hierarchy %><br>
+    <%= f.text_field :hierarchy %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :department %><br>
+    <%= f.text_field :department %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :subarea %><br>
+    <%= f.text_field :subarea %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :min_age %><br>
+    <%= f.number_field :min_age %>
+  </div>
+  <div class="field">
+    <%= f.label :max_age %><br>
+    <%= f.number_field :max_age %>
+  </div>
+  <div class="field">
+    <%= f.label :education_level %><br>
+    <%= f.text_field :education_level %>
+  </div>
+  <div class="field">
+    <%= f.label :education_state %><br>
+    <%= f.text_field :education_state %>
+  </div>
+  <div class="field">
+    <%= f.label :language %><br>
+    <%= f.text_field :language %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :company %><br>
+    <%= f.text_field :company %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

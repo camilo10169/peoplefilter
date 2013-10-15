@@ -1,0 +1,2 @@
+module NoFormalEducationsHelper
+end

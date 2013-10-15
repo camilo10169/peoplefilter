@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  gender: MyString
+  marital_status: MyString
+  country_birth: MyString
+  dpto_birth: MyString
+  city_birth: MyString
+  job_profile: MyText
+  years_experience: 1
+  wage_aspiration: 1.5
+  has_job: false
+  native_language: MyString
+  person_id: 
+
+two:
+  gender: MyString
+  marital_status: MyString
+  country_birth: MyString
+  dpto_birth: MyString
+  city_birth: MyString
+  job_profile: MyText
+  years_experience: 1
+  wage_aspiration: 1.5
+  has_job: false
+  native_language: MyString
+  person_id: 

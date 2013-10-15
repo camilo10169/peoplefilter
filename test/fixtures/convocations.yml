@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  position: MyString
+  amount_vacancies: 1
+  hierarchy: MyString
+  city: MyString
+  department: MyString
+  area: MyString
+  subarea: MyString
+  gender: MyString
+  min_age: 1
+  max_age: 1
+  education_level: MyString
+  education_state: MyString
+  language: MyString
+  description: MyText
+  company_id: 
+
+two:
+  position: MyString
+  amount_vacancies: 1
+  hierarchy: MyString
+  city: MyString
+  department: MyString
+  area: MyString
+  subarea: MyString
+  gender: MyString
+  min_age: 1
+  max_age: 1
+  education_level: MyString
+  education_state: MyString
+  language: MyString
+  description: MyText
+  company_id: 

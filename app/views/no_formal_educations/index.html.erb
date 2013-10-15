@@ -1,0 +1,51 @@
+<h1>Listing no_formal_educations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type study</th>
+      <th>Country</th>
+      <th>Department</th>
+      <th>City</th>
+      <th>Degree</th>
+      <th>Institute</th>
+      <th>Area</th>
+      <th>Time intensity</th>
+      <th>Date start</th>
+      <th>Date end</th>
+      <th>Description</th>
+      <th>Validated</th>
+      <th>Person</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @no_formal_educations.each do |no_formal_education| %>
+      <tr>
+        <td><%= no_formal_education.type_study %></td>
+        <td><%= no_formal_education.country %></td>
+        <td><%= no_formal_education.department %></td>
+        <td><%= no_formal_education.city %></td>
+        <td><%= no_formal_education.degree %></td>
+        <td><%= no_formal_education.institute %></td>
+        <td><%= no_formal_education.area %></td>
+        <td><%= no_formal_education.time_intensity %></td>
+        <td><%= no_formal_education.date_start %></td>
+        <td><%= no_formal_education.date_end %></td>
+        <td><%= no_formal_education.description %></td>
+        <td><%= no_formal_education.validated %></td>
+        <td><%= no_formal_education.person %></td>
+        <td><%= link_to 'Show', no_formal_education %></td>
+        <td><%= link_to 'Edit', edit_no_formal_education_path(no_formal_education) %></td>
+        <td><%= link_to 'Destroy', no_formal_education, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New No formal education', new_no_formal_education_path %>

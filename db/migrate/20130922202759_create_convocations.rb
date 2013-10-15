@@ -1,6 +1,7 @@
 class CreateConvocations < ActiveRecord::Migration
   def change
     create_table :convocations do |t|
+      t.string :name
       t.string :position
       t.integer :amount_vacancies
       t.string :hierarchy
@@ -15,6 +16,8 @@ class CreateConvocations < ActiveRecord::Migration
       t.string :education_state
       t.string :language
       t.text :description
+      t.date :date_start
+      t.date :date_end
       t.references :company, index: true
 
       t.timestamps

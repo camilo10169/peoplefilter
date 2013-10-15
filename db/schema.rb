@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20130922205648) do
   add_index "companies", ["user_id"], name: "index_companies_on_user_id"
 
   create_table "convocations", force: true do |t|
+    t.string   "name"
     t.string   "position"
     t.integer  "amount_vacancies"
     t.string   "hierarchy"
@@ -50,6 +51,8 @@ ActiveRecord::Schema.define(version: 20130922205648) do
     t.string   "education_state"
     t.string   "language"
     t.text     "description"
+    t.date     "date_start"
+    t.date     "date_end"
     t.integer  "company_id"
     t.datetime "created_at"
     t.datetime "updated_at"
